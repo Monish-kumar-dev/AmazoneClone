@@ -1,0 +1,12 @@
+.subNavigation{
+    background-color: #262F40;
+    color: white;
+    text-align: center;
+}
+.slds-col:hover{
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+
+}

@@ -1,0 +1,27 @@
+<template>
+    <div class="blockbuster-deals">
+        <h2>Blockbuster deals</h2>
+        <div class="deals-container">
+            <!-- Left arrow button for navigating to the previous set -->
+            <button class="arrow-button left" onclick={handlePrevious}>&lt;</button>
+
+            <!-- Container for the product cards -->
+            <div class="deals-grid">
+                <template for:each={visibleProducts} for:item="product">
+                    <div key={product.id} class="deal-card">
+                        <img src={product.imageUrl} alt={product.name} class="product-image" />
+                        <div class="product-details">
+                            <p class="product-name">{product.name}</p>
+                            <p class="product-price">{product.price}</p>
+                            <p class="product-mrp">{product.mrp}</p>
+                            <p class="product-discount">{product.discount}</p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <!-- Right arrow button for navigating to the next set -->
+            <button class="arrow-button right" onclick={handleNext}>&gt;</button>
+        </div>
+    </div>
+</template>

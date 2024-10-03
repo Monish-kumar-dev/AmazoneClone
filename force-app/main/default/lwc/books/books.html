@@ -1,0 +1,23 @@
+<template>
+    <template if:true={bookInfo} for:each={bookInfo} for:item="Book" for:index="index">
+        <lightning-card variant="Narrow" key={Book.Id} class="slds-m-bottom_medium book-card">
+            <div class="slds-grid">
+                <!-- Left side: Book Image -->
+                <div class="slds-col slds-size_6-of-12">
+                    <lightning-formatted-rich-text
+                      value={Book.backgroundImg__c} class="book-image"
+                       
+                    ></lightning-formatted-rich-text>
+                </div>
+                <!-- Right side: Book Details -->
+                <div class="slds-col slds-size_6-of-12 slds-p-left_medium">
+                    <p class="bookName slds-text-heading_medium">{Book.Name}</p>
+                    <p class="authorName slds-text-body_regular">{Book.Author_Name__c}</p>
+                    <p class="language slds-text-body_regular">{Book.language__c}</p>
+                    <p class="price slds-text-title_bold">₹{Book.price__c}</p>
+                    <p class="category slds-text-body_small">{Book.Book_Category__c}</p>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

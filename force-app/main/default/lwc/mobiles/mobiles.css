@@ -1,0 +1,38 @@
+.book-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to the card */
+    border-radius: 10px; /* Rounds the corners */
+    padding: 10px;
+}
+
+.mobile-image {
+    width: 100%; /* Ensures the image takes up the full width */
+    height: auto; /* Keeps the aspect ratio */
+    object-fit: contain; /* Prevents the image from stretching */
+}
+
+.brandName {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Model{
+    color: #555; /* Grey color for subtle author details */
+}
+
+.storage {
+    color: #666; /* Slightly lighter than author details */
+}
+
+.price {
+    color: #D0021B; /* Red color to highlight the price */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.slds-m-bottom_medium {
+    margin-bottom: 20px;
+}
+
+.slds-p-left_medium {
+    padding-left: 15px;
+}

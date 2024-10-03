@@ -1,0 +1,99 @@
+.blockbuster-deals {
+    margin: 20px;
+    padding: 10px;
+    background-color: #ffd77d;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.deals-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Prevents the content from overflowing */
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Show 4 items at a time */
+    gap: 20px;
+    flex-grow: 1;
+    transition: transform 0.5s ease-in-out; /* Adds smooth transition to grid */
+}
+
+.deals-container.move-right .deals-grid {
+    transform: translateX(-100%); /* Moves the grid to the right */
+}
+
+.deals-container.move-left .deals-grid {
+    transform: translateX(100%); /* Moves the grid to the left */
+}
+
+.deal-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    color: #333;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #e53935;
+}
+
+.product-mrp {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #757575;
+}
+
+.product-discount {
+    font-size: 0.9rem;
+    color: #388e3c;
+    font-weight: bold;
+}
+
+.arrow-button {
+    background-color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.arrow-button:hover {
+    background-color: #f0f0f0;
+}
+
+.left {
+    margin-right: 20px;
+}
+
+.right {
+    margin-left: 20px;
+}

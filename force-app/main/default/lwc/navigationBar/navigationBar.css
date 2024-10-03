@@ -1,0 +1,33 @@
+.navClass{
+    background-color: #131921;
+    color: white;
+ 
+}
+.amazon-logo {
+    background-color: #131921;
+    text-align: center;
+    padding: 10px;
+}
+
+.amazon-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.userLogo{
+    text-align: right;
+
+}
+.userName{
+    
+    text-align: center;
+    margin-top: 15px;
+cursor: pointer;
+}
+.amazon-logo:hover{
+    border-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+
+}

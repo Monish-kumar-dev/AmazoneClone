@@ -23,6 +23,8 @@ handleLogin() {
 
         this.isError=false;
         console.log('Result is:',result);
+        window.location.href = result;
+        
 
     }).catch((error)=>{
         console.log('error: ',error);
@@ -32,10 +34,6 @@ handleLogin() {
     
     
 }
-handleSignUp() {
-console.log("Inside Sign Up");
-console.log(this.email);
-console.log(this.password);
-}
+
 
 }

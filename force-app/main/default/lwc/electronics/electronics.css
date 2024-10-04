@@ -19,7 +19,7 @@
     color: #555; /* Grey color for subtle author details */
 }
 
-.storage {
+.storage,.Battery,.Ram {
     color: #666; /* Slightly lighter than author details */
 }
 

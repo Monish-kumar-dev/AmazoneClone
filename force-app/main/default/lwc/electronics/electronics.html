@@ -1,0 +1,78 @@
+<template>
+    <template if:true={ElectronicsInfo} for:each={ElectronicsInfo} for:item="Electronics" for:index="index">
+        <lightning-card variant="Narrow" key={Electronics.Id} class="slds-m-bottom_medium book-card">
+            <div class="slds-grid">
+                <!-- Left side: Electronics Image -->
+                
+
+                <!-- Right side: Electronics Details -->
+
+                <!-- Laptop Details -->
+                <template if:true={Electronics.isLaptop}>
+                    <div class="slds-col slds-size_6-of-12">
+                        <lightning-formatted-rich-text
+                            value={Electronics.Product_Image__c} class="mobile-image">
+                        </lightning-formatted-rich-text>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12 slds-p-left_medium">
+                        
+                        <p class="brandName slds-text-heading_medium">{Electronics.Brand__c}</p>
+                        <p class="Model slds-text-body_regular">{Electronics.Model__c}</p>
+                        <p class="Processor slds-text-body_regular">{Electronics.Processor__c}</p>
+                        <p class="Ram slds-text-body_regular">{Electronics.Ram__c}</p>
+                        <p class="Processor slds-text-body_regular">{Electronics.Battery__c}</p>
+                        
+                        <p class="price slds-text-title_bold">₹{Electronics.Price__c}</p>
+                    </div>
+                </template>
+
+                <!-- Headphone Details -->
+                <template if:true={Electronics.isHeadphone}>
+                    <div class="slds-col slds-size_6-of-12">
+                        <lightning-formatted-rich-text
+                            value={Electronics.Product_Image__c} class="mobile-image">
+                        </lightning-formatted-rich-text>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12 slds-p-left_medium">
+                        <p class="brandName slds-text-heading_medium">{Electronics.Brand__c}</p>
+                        <p class="Model slds-text-body_regular">{Electronics.Model__c}</p>
+                        <p class="HeadphoneType slds-text-body_regular">{Electronics.Headphone_type__c}</p>
+                        <p class="price slds-text-title_bold">₹{Electronics.Price__c}</p>
+                    </div>
+                </template>
+
+                <!-- Camera Details -->
+                <template if:true={Electronics.isCamera}>
+                    <div class="slds-col slds-size_6-of-12">
+                        <lightning-formatted-rich-text
+                            value={Electronics.Product_Image__c} class="mobile-image">
+                        </lightning-formatted-rich-text>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12 slds-p-left_medium">
+                        <p class="brandName slds-text-heading_medium">{Electronics.Brand__c}</p>
+                        <p class="Model slds-text-body_regular">{Electronics.Model__c}</p>
+                        <p class="LensType slds-text-body_regular">{Electronics.Lens_type__c}</p>
+                        <p class="Battery slds-text-body_regular">{Electronics.Battery__c}</p>
+                        <p class="price slds-text-title_bold">₹{Electronics.Price__c}</p>
+                    </div>
+                </template>
+
+                <!-- Smart Watch Details -->
+                <template if:true={Electronics.isSmartWatch}>
+                    <div class="slds-col slds-size_6-of-12">
+                        <lightning-formatted-rich-text
+                            value={Electronics.Product_Image__c} class="mobile-image">
+                        </lightning-formatted-rich-text>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12 slds-p-left_medium">
+                        <p class="brandName slds-text-heading_medium">{Electronics.Brand__c}</p>
+                        <p class="Model slds-text-body_regular">{Electronics.Model__c}</p>
+                        <p class="Battery slds-text-body_regular">{Electronics.Battery__c}</p>
+                        <p class="price slds-text-title_bold">₹{Electronics.Price__c}</p>
+                    </div>
+                </template>
+
+            </div>
+        </lightning-card>
+    </template>
+</template>

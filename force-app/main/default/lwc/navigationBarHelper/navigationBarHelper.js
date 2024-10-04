@@ -28,4 +28,13 @@ navigateToMobiles() {
     })
 
 }
+navigateToElectronics() {
+    this[NavigationMixin.Navigate]({
+        "type": "standard__webPage",
+        "attributes": {
+           "url": "/electronics"
+        }
+    })
+
+}
 }
